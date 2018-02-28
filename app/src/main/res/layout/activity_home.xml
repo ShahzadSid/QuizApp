@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/firstName"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/tvFirstName"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="22sp"
+                        android:id="@+id/firstNameTV"
+                        android:textStyle="bold"
+                        android:layout_alignBaseline="@+id/tvFirstName"
+                        android:layout_alignBottom="@+id/tvFirstName"
+                        android:layout_toEndOf="@+id/tvFirstName"
+                        android:layout_toRightOf="@+id/tvFirstName"
+                        android:hint="" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/lastName"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/tvLastName"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:id="@+id/lastNameTV"
+                        android:layout_alignBaseline="@+id/tvLastName"
+                        android:layout_alignBottom="@+id/tvLastName"
+                        android:layout_toEndOf="@+id/tvLastName"
+                        android:layout_toRightOf="@+id/tvLastName"
+                        android:hint="" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/phone"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/tvPhone"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:id="@+id/phoneNumberTV"
+                        android:layout_alignBaseline="@+id/tvPhone"
+                        android:layout_alignBottom="@+id/tvPhone"
+                        android:layout_toEndOf="@+id/tvPhone"
+                        android:layout_toRightOf="@+id/tvPhone"
+                        android:hint="" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/phoneNumberTV"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/phoneChangeButton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/ic_pencil" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:id="@+id/btnUserType"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/userType"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:id="@+id/btnLogout"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/logout"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
